@@ -1,0 +1,143 @@
+@use 'colors' as *;
+@use 'fonts' as *;
+@use 'typography';
+@use 'mixins';
+@use 'variables' as *;
+@use 'responsive' as *;
+
+.main {
+  @extend .bg-black-100;
+
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.header {
+  padding-block: 120px;
+}
+
+.title {
+  @extend .heading-1;
+  @extend .text-primary;
+
+  margin-block-start: 0;
+  margin-block-end: 24px;
+
+  @include smAndBelow() {
+    margin-block-end: 16px;
+  }
+
+  span {
+    @extend .text-gradient;
+
+    white-space: nowrap;
+  }
+}
+
+.lead {
+  @extend .text-lead;
+  @extend .text-gray-100;
+
+  margin-block-end: 32px;
+
+  @include smAndBelow() {
+    margin-block-end: 24px;
+  }
+}
+
+.offers {
+  margin-block-end: 48px;
+
+  @include smAndBelow() {
+    margin-block-end: 32px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-block-end: 10px;
+  }
+
+  span:first-child {
+    @extend .text-secondary;
+  }
+
+  span:last-child {
+    @extend .text-gray-100;
+  }
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+
+  input {
+    @extend .bg-primary;
+    @extend .text-black-300;
+
+    font-size: 14px;
+    height: 48px;
+    padding-inline: 12px;
+    border: none;
+    border-radius: $border-radius-100;
+
+    &::placeholder {
+      @extend .text-gray-200;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $tertiary-color;
+    }
+  }
+
+  button {
+    @extend .bg-secondary;
+    @extend .text-primary;
+
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    font-family: $secondary-font;
+    font-weight: $fw-600;
+    text-transform: uppercase;
+    border-radius: $border-radius-100;
+    border: none;
+
+    &:hover {
+      @extend .bg-gradient;
+    }
+  }
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @include mdAndBelow() {
+    display: none;
+  }
+}
+
+.largeCircle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include smAndBelow() {
+    top: -80px;
+    right: -30px;
+  }
+}
+
+.smallCircle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

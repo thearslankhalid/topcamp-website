@@ -1,0 +1,95 @@
+@mixin forMobile {
+  @media (max-width: 767px) {
+      @content;
+  }
+}
+
+@mixin forIpad {
+  @media (max-width: 768px) {
+      @content;
+  }
+}
+
+@mixin forIpadPro {
+  @media (max-width: 1024px) {
+      @content;
+  }
+}
+
+@mixin forIpad {
+  @media (max-width: 768px) {
+      @content;
+  }
+}
+
+@mixin forIpadPro {
+  @media (max-width: 1024px) {
+      @content;
+  }
+}
+
+@mixin xsOnly {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin smOnly {
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin smAndAbove {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin smAndBelow {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mdOnly {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mdAndAbove {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mdAndBelow {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin lgOnly {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lgAndAbove {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin lgAndBelow {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xlOnly {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}

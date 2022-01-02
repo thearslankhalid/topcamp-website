@@ -1,0 +1,26 @@
+@use 'mixins';
+@use 'fonts' as *;
+@use 'responsive' as *;
+
+$body--font-size: 16px;
+$body--line-height: 1.2;
+
+.heading-1 {
+  font-family: $secondary-font;
+  font-size: 48px;
+  line-height: 1.5;
+
+  @include smAndBelow() {
+    font-size: 32px;
+  }
+}
+
+.text-lead {
+  font-size: 20px;
+  line-height: 1.7;
+
+  @include smAndBelow() {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
