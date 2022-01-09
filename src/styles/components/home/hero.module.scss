@@ -1,20 +1,19 @@
-@use 'colors' as *;
-@use 'fonts' as *;
-@use 'typography';
-@use 'mixins';
-@use 'variables' as *;
-@use 'responsive' as *;
+@use '@/styles/colors' as *;
+@use '@/styles/fonts' as *;
+@use '@/styles/typography';
+@use '@/styles/mixins' as *;
+@use '@/styles/variables' as *;
+@use '@/styles/responsive' as *;
 
-.main {
+.heroSection {
   @extend .bg-black-100;
 
   position: relative;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
 .header {
-  padding-block: 120px;
+  padding-block: 160px;
 }
 
 .title {
@@ -29,10 +28,16 @@
   }
 
   span {
-    @extend .text-gradient;
-
     white-space: nowrap;
+
+    @include xsOnly() {
+      white-space: initial;
+    }
   }
+}
+
+.gradient {
+  @extend .text-gradient;
 }
 
 .lead {
