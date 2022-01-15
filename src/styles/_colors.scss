@@ -44,3 +44,15 @@ $stt-gradient: linear-gradient(to right, $secondary-color, $tertiary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@property --gradientColor1 {
+  syntax: '<color>';
+  initial-value: $tertiary-color;
+  inherits: false;
+}
+
+@property --gradientColor2 {
+  syntax: '<color>';
+  initial-value: $tertiary-color;
+  inherits: false;
+}

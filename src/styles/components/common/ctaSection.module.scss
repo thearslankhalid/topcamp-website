@@ -1,0 +1,90 @@
+@use '@/styles/colors' as *;
+@use '@/styles/typography' as *;
+@use '@/styles/fonts' as *;
+@use '@/styles/responsive' as *;
+@use '@/styles/variables' as *;
+
+.ctaSection {
+  @extend .bg-gradient;
+
+  padding-block: 120px;
+
+  @include lgAndBelow() {
+    padding-block: 100px;
+  }
+
+  @include mdAndBelow() {
+    padding-block: 80px;
+  }
+
+  @include smAndBelow() {
+    padding-block: 60px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mdAndBelow() {
+    align-items: flex-start;
+  }
+}
+
+.title {
+  @extend .heading-1;
+  @extend .text-primary;
+
+  margin: 0;
+  margin-block-end: 30px;
+  
+}
+
+.lead {
+  @extend .text-primary;
+
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  margin-block-end: 10px;
+  
+  @include smAndBelow() {
+    font-size: 16px;
+  }
+}
+
+.date {
+  @extend .text-primary;
+
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 0;
+  margin-block-end: 30px;
+  
+  @include smAndBelow() {
+    font-size: 24px;
+  }
+}
+
+.link {
+  @extend .text-primary;
+
+  font-size: 14px;
+  width: 300px;
+  height: 48px;
+  border: 2px solid $primary-color;
+  font-family: $secondary-font;
+  font-weight: $fw-600;
+  border-radius: $border-radius-100;
+  border-radius: 6px;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    @extend .bg-primary;
+    @extend .text-black-100;
+  }
+}

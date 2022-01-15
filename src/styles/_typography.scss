@@ -7,6 +7,24 @@ $body--line-height: 1.2;
 
 .heading-1 {
   font-family: $secondary-font;
+  font-size: 72px;
+  line-height: 1.1;
+
+  @include lgAndBelow() {
+    font-size: 60px;
+  }
+
+  @include mdAndBelow() {
+    font-size: 48px;
+  }
+
+  @include smAndBelow() {
+    font-size: 40px;
+  }
+}
+
+.heading-2 {
+  font-family: $secondary-font;
   font-size: 48px;
   line-height: 1.5;
 

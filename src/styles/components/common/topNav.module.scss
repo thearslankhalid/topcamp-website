@@ -1,0 +1,53 @@
+@use '@/styles/colors' as *;
+@use '@/styles/typography' as *;
+@use '@/styles/fonts' as *;
+@use '@/styles/variables' as *;
+@use '@/styles/responsive' as *;
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-block: 30px;
+  z-index: 1;
+  width: 100%;
+}
+
+.logoContainer {
+  height: 100%;
+  display: flex;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+
+  button {
+    @extend .text-primary;
+    @extend .font-secondary;
+    @extend .fw-600;
+
+    background-color: transparent;
+    border: 2px solid $primary-color;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    padding-inline: 60px;
+    border-radius: $border-radius-100;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      @extend .bg-primary;
+      @extend .text-black-100;
+    }
+
+    @include xsOnly() {
+      padding-inline: 20px;
+      white-space: nowrap;
+    }
+  }
+}
