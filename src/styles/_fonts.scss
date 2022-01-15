@@ -1,7 +1,29 @@
 $primary-font: Roboto, 'sans-serif';
 $secondary-font: Montserrat, 'sans-serif';
 
+.font-primary {
+  font-family: $primary-font;
+}
+
+.font-secondary {
+  font-family: $secondary-font;
+}
+
 $fw-400: 400;
 $fw-500: 500;
 $fw-600: 600;
 $fw-700: 700;
+
+$fontWeights: (
+  "fw-400": $fw-400,
+  "fw-500": $fw-500,
+  "fw-600": $fw-600,
+  "fw-700": $fw-700,
+);
+
+@each $font-weight, $font-weight-value in $fontWeights {
+
+  .#{$font-weight} {
+    font-weight: $font-weight-value;
+  }
+}

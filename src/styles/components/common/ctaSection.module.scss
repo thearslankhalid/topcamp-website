@@ -9,8 +9,16 @@
 
   padding-block: 120px;
 
-  @include smAndBelow() {
+  @include lgAndBelow() {
     padding-block: 100px;
+  }
+
+  @include mdAndBelow() {
+    padding-block: 80px;
+  }
+
+  @include smAndBelow() {
+    padding-block: 60px;
   }
 }
 
@@ -73,6 +81,7 @@
   text-transform: uppercase;
   display: grid;
   place-items: center;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     @extend .bg-primary;
