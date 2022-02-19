@@ -35,7 +35,7 @@ export default function Footer() {
           <div className='col'>
             <hr className={styles.hr} />
             <div className={styles.copyrightContainer}>
-              <small className={styles.copyright}>Copyright 2021 TopCamp</small>
+              <small className={styles.copyright}>Copyright 2022 TopCamp</small>
             </div>
           </div>
         </div>

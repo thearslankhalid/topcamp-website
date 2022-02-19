@@ -43,8 +43,8 @@ export default function Hero() {
                   }
               </ul>
               <form className={styles.subscribeForm}>
-                <input type="email" required placeholder='Enter your email address' />
-                <button type='submit'>Enroll Now</button>
+                {/* <input type="email" required placeholder='Enter your email address' /> */}
+                <button type='submit'>Apply Now</button>
               </form>
             </header>
           </div>

@@ -1,0 +1,102 @@
+@use '@/styles/colors' as *;
+@use '@/styles/typography' as *;
+@use '@/styles/fonts' as *;
+@use '@/styles/responsive' as *;
+@use '@/styles/variables' as *;
+
+.faqSection {
+  @extend .bg-black-100;
+
+  padding-block: 120px;
+
+  @include lgAndBelow() {
+    padding-block: 100px;
+  }
+
+  @include mdAndBelow() {
+    padding-block: 80px;
+  }
+
+  @include smAndBelow() {
+    padding-block: 60px;
+  }
+}
+
+.title {
+  @extend .heading-2;
+  @extend .text-tertiary;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center
+}
+
+.subtitle {
+  @extend .text-gray-100;
+
+  font-size: 20px;
+  line-height: 28px;
+  margin-block-start: 0;
+  margin-block-end: 30px;
+  text-align: center;
+}
+
+.faqContainer {
+  display: flex;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.faqColumnContainer {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.faqItem {
+  @extend .bg-primary;
+  border-radius: $border-radius-100;
+  position: relative;
+  width: 100%;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    @extend .bg-gradient;
+  }
+
+  &:not(:last-child) {
+    margin-block-end: 10px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 20px 15px 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    border: none;
+    border-radius: $border-radius-100;
+  }
+  
+  p {
+    padding-inline-start: 20px;
+    font-size: 14px;
+    line-height: 1rem;
+    padding-block: 20px;
+    margin-block: 0;
+  }
+}

@@ -38,7 +38,6 @@
 
   margin: 0;
   margin-block-end: 30px;
-  
 }
 
 .lead {
@@ -65,6 +64,11 @@
   @include smAndBelow() {
     font-size: 24px;
   }
+}
+
+.sup {
+  font-size: 16px;
+  line-height: 17px;
 }
 
 .link {
