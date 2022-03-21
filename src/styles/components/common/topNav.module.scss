@@ -17,6 +17,10 @@
 .logoContainer {
   height: 100%;
   display: flex;
+
+  img {
+    cursor: pointer;
+  }
 }
 
 .linkContainer {
