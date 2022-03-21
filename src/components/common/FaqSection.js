@@ -26,7 +26,7 @@ const FaqItem = ({ faq }) => {
 
       {
         isOpen
-          ? <p>{faq.answer}</p>
+          ? <p className={styles.faqBody}>{faq.answer}</p>
           : null
       }
     </div>
@@ -37,36 +37,36 @@ export default function FaqSection() {
   const faqColumns = [
     [
       {
-        question: 'What will I pay for the bootcamp?',
-        answer: 'This is a sample long answer to test how faqs look like in the first place if it is very long. Lets see how it looks.'
+        question: 'What are the payment options for the bootcamp?',
+        answer: 'You will have to pay for the full fee upfront in a lump sum for the bootcamp. We do not have installment options available currently.'
       },
       {
-        question: 'What will I pay for the bootcamp?',
-        answer: 'This is a sample long answer to test how faqs look like in the first place if it is very long. Lets see how it looks.'
+        question: 'Which technologies will be covered?',
+        answer: 'We will cover modern front-end technologies like React, Javascript, HTML, SCSS, Git and many more in depth.'
       },
       {
-        question: 'What will I pay for the bootcamp?',
-        answer: 'This is a sample long answer to test how faqs look like in the first place if it is very long. Lets see how it looks.'
+        question: 'How will the classes be conducted?',
+        answer: 'The classes will be conducted in a hybrid model. There will be a total of 5 sessions in a week. There will be 2-3 online sessions of 1-2 hours in the week days and there will be 2 on-site sessions of 4 hours over the weekends.'
       },
     ],
     [
       {
-        question: 'What will I pay for the bootcamp?',
-        answer: 'This is a sample long answer to test how faqs look like in the first place if it is very long. Lets see how it looks.'
+        question: 'Why will employers hire graduates from a bootcamp?',
+        answer: 'We at TopCamp have a strong curriculum and training that will prepare you to succeed in tech jobs. Throughout the program we will be making you work in ways that mirror in-demand jobs: team projects, tight deadlines, and building products.'
       },
       {
-        question: 'What will I pay for the bootcamp?',
-        answer: 'This is a sample long answer to test how faqs look like in the first place if it is very long. Lets see how it looks.'
+        question: 'Who can we contact if we have more questions?',
+        answer: 'Please reach out to contact.topcamp@gmail.com for any further questions.'
       },
       {
-        question: 'What will I pay for the bootcamp?',
-        answer: 'This is a sample long answer to test how faqs look like in the first place if it is very long. Lets see how it looks.'
+        question: 'What are the computer requirements?',
+        answer: 'Our curriculum consists of many instructions and software packages that work seamlessly with a good spec laptop. We recommend a laptop with a minimum of 8GB of RAM and a quad-core processor released in the last few years. However, it is possible to complete the program with lower spec laptops.'
       }
     ]
   ];
 
-  const renderFaqColumn = (column) => (
-    <div className={styles.faqColumnContainer}>
+  const renderFaqColumn = (column, index) => (
+    <div key={`faq-column-${index}`} className={styles.faqColumnContainer}>
       {column.map((faq, index) => (<FaqItem faq={faq} key={`faq-${index}`} />))}
     </div>
   );
@@ -79,7 +79,7 @@ export default function FaqSection() {
             <h2 className={styles.title}>FAQs</h2>
             <p className={styles.subtitle}>This is a sample subtitle</p>
             <div className={styles.faqContainer}>
-              {faqColumns.map((column, index) => renderFaqColumn(column))}
+              {faqColumns.map((column, index) => renderFaqColumn(column, index))}
             </div>
           </div>
         </div>

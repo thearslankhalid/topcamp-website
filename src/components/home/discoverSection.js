@@ -1,4 +1,5 @@
 import styles from '@/styles/components/home/discoverSection.module.scss';
+import Link from 'next/link';
 
 const tracks = [
   {
@@ -31,7 +32,9 @@ const TrackCard = ({ track, secondary }) => (
           <div className={styles.trackCardBody}>
             <h3 className={styles.trackCardTitle}>{track.title}</h3>
             <p className={styles.trackCardDescription}>{track.description}</p>
-            <button className={styles.trackCardButton}>{track.buttonText}</button>
+            <Link href="/apply" passHref>
+              <button className={styles.trackCardButton}>{track.buttonText}</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import styles from '@/styles/components/home/hero.module.scss'
+import Link from 'next/link'
 
 export default function Hero() {
   const offers = [
-    'Industry Experience',
+    'Industry knowledge',
     'Best practices',
-    'Basics of JavaScript, Git, HTML, and CSS'
+    'Basics of React, JavaScript, Git, HTML, and CSS'
   ]
 
   return (
@@ -33,7 +34,7 @@ export default function Hero() {
                     offers.map((offer, index) => (
                       <li className={styles.offerItem} key={`offer-${index}`}>
                         <span className="material-icons">
-                          check_circle
+                          &#xe86c;
                         </span>
                         <span>
                           {offer}
@@ -44,7 +45,9 @@ export default function Hero() {
               </ul>
               <form className={styles.subscribeForm}>
                 {/* <input type="email" required placeholder='Enter your email address' /> */}
-                <button type='submit'>Apply Now</button>
+                <Link href="/apply" passHref>
+                  <button type='submit'>Apply Now</button>
+                </Link>
               </form>
             </header>
           </div>
