@@ -1,0 +1,160 @@
+@use '@/styles/colors' as *;
+@use '@/styles/typography' as *;
+@use '@/styles/fonts' as *;
+@use '@/styles/responsive' as *;
+@use '@/styles/variables' as *;
+
+$track-card--border-radius: 16px;
+$track-card--base-color: $tertiary-color;
+
+.ctaSection {
+  @extend .bg-secondary;
+
+  padding-block: 120px;
+
+  @include lgAndBelow() {
+    padding-block: 100px;
+  }
+
+  @include mdAndBelow() {
+    padding-block: 80px;
+  }
+
+  @include smAndBelow() {
+    padding-block: 60px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include mdAndBelow() {
+    align-items: flex-start;
+  }
+}
+
+.title {
+  @extend .heading-2;
+  @extend .text-primary;
+
+  margin: 0;
+  margin-block-end: 0;
+}
+
+.lead {
+  @extend .text-primary;
+
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  margin-block-end: 30px;
+  
+  @include smAndBelow() {
+    font-size: 16px;
+  }
+}
+
+.trackCardsContainer {
+  flex-wrap: wrap;
+}
+
+.trackCard {
+  @extend .bg-primary;
+
+  border-radius: $track-card--border-radius;
+  padding: 20px;
+
+  @media screen and (max-width: 992px) {
+    margin-block-end: 30px;
+  }
+
+  .trackCardImage {
+    border-radius: $track-card--border-radius;
+    height: 100%;
+    width: 100%;
+    min-height: 175px;
+    background-color: rgba($color: $track-card--base-color, $alpha: 0.15);
+    display: grid;
+    place-items: center;
+    transition: background-color ease-in 0.3s;
+  }
+  
+  .trackCardIcon {
+    color: $track-card--base-color;
+    font-size: 32px;
+    transition: color ease-in 0.3s;
+  }
+
+  .trackCardBody {
+    height: 100%;
+  }
+  
+  .trackCardTitle {
+    @extend .text-black-300;
+    @extend .font-secondary;
+  
+    font-size: 20px;
+    line-height: 28px;
+    margin-block-start: 0;
+    margin-block-end: 10px;
+  }
+  
+  .trackCardDescription {
+    @extend .text-black-100;
+  
+    font-size: 14px;
+    line-height: 17px;
+    margin-block-start: 0;
+    margin-block-end: 20px;
+  }
+  
+  .trackCardButton {
+    @extend .text-primary;
+  
+    border: none;
+    font-size: 12px;
+    line-height: 17px;
+    border-radius: 8px;
+    height: 35px;
+    width: 140px;
+    text-transform: uppercase;
+    background-color: $track-card--base-color;
+
+    @media screen and (max-width: 992px) {
+      margin-block-start: auto;
+    }
+  }
+
+  &:hover {
+    .trackCardImage {
+      background-color: $track-card--base-color;
+    }
+
+    .trackCardIcon {
+      color: $primary-color;
+    }
+  }
+}
+
+.secondaryTrackCard {
+  $track-card--base-color: $orange-100;
+
+  .trackCardImage {
+    background-color: rgba($color: $track-card--base-color, $alpha: 0.15);
+  }
+
+  .trackCardIcon {
+    color: $track-card--base-color;
+  }
+
+  .trackCardButton {
+    background-color: $track-card--base-color;
+  }
+
+  &:hover {
+    .trackCardImage {
+      background-color: $track-card--base-color;
+    }
+  }
+}

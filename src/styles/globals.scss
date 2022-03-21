@@ -1,13 +1,17 @@
 @use 'fonts' as *;
 @use 'typography' as *;
+@use 'colors' as *;
 
 html,
 body {
+  @extend .bg-black-100;
+
   padding: 0;
   margin: 0;
   font-family: $primary-font;
   font-size: $body--font-size;
   line-height: $body--line-height;
+  scroll-behavior: smooth;
 }
 
 a {

@@ -1,0 +1,9 @@
+@use '@/styles/colors' as *;
+
+.main {
+  background-color: $primary-color;
+}
+
+.applyFormContainer {
+  margin-block-start: 150px;
+}
