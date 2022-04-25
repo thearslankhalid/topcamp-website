@@ -149,3 +149,12 @@
   left: 0;
   bottom: 0;
 }
+
+.smallText {
+  @extend .text-small;
+  @extend .text-gray-100;
+
+  margin-block-start: -4px;
+  font-style: italic;
+  text-align: center;
+}

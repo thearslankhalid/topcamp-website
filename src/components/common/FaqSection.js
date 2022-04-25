@@ -76,8 +76,8 @@ export default function FaqSection() {
       <div className='container'>
         <div className='row'>
           <div className='col'>
-            <h2 className={styles.title}>FAQs</h2>
-            <p className={styles.subtitle}>This is a sample subtitle</p>
+            <h2 className={styles.title}>Frequently Asked Questions</h2>
+            <p className={styles.subtitle}>Find answers to common questions about TopCamp programs, resources and more!</p>
             <div className={styles.faqContainer}>
               {faqColumns.map((column, index) => renderFaqColumn(column, index))}
             </div>
