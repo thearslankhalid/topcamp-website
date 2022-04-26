@@ -3,28 +3,38 @@ import Link from 'next/link';
 
 const tracks = [
   {
-    icon: 'lightbulb',
-    title: 'HTML, CSS and Javascript basics workshop',
-    description: 'Learn the basic building blocks of front-end development.',
-    deadline: '01-03-2022',
-    buttonText: 'Apply now',
-  },
-  {
     icon: 'developer_mode',
     title: 'Front-end development Bootcamp',
-    description: 'Learn how to build user-friendly web applications from scratch.',
-    deadline: '30-04-2022',
+    description:
+      'Learn how to build user-friendly web applications from scratch.',
+    deadline: '30-05-2022',
     buttonText: 'Apply now',
+    isRegistrationOpen: true,
+  },
+  {
+    icon: 'lightbulb',
+    title: 'Back-end development Bootcamp',
+    description:
+      'Learn the basic building blocks of building scalable back-end applications.',
+    deadline: '01-03-2022',
+    buttonText: 'Coming soon!',
+    isRegistrationOpen: false,
   },
 ];
 
 const TrackCard = ({ track, secondary }) => (
   <div className="col-lg-6">
-    <div className={`${secondary ? styles.secondaryTrackCard : ''} ${styles.trackCard}`}>
+    <div
+      className={`${secondary ? styles.secondaryTrackCard : ''} ${
+        styles.trackCard
+      }`}
+    >
       <div className="row">
         <div className="col-5">
           <div className={styles.trackCardImage}>
-            <span className={`material-icons ${styles.trackCardIcon}`}>{track.icon}</span>
+            <span className={`material-icons ${styles.trackCardIcon}`}>
+              {track.icon}
+            </span>
           </div>
         </div>
 
@@ -32,9 +42,17 @@ const TrackCard = ({ track, secondary }) => (
           <div className={styles.trackCardBody}>
             <h3 className={styles.trackCardTitle}>{track.title}</h3>
             <p className={styles.trackCardDescription}>{track.description}</p>
-            <Link href="/apply" passHref>
-              <button className={styles.trackCardButton}>{track.buttonText}</button>
-            </Link>
+            {track.isRegistrationOpen ? (
+              <Link href="/apply" passHref>
+                <button className={styles.trackCardButton}>
+                  {track.buttonText}
+                </button>
+              </Link>
+            ) : (
+              <button className={styles.trackCardButton}>
+                {track.buttonText}
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -52,11 +70,17 @@ export default function DiscoverSection() {
               Discover our beginner friendly tracks
             </h1>
             <p className={styles.lead}>
-              Become a student at TopCamp. The next application deadline is:
+              Our bootcamps give you an entry point to the modern world
+              of web development. Our beginner friendly tracks help you to
+              succeed in tech:
             </p>
             <div className={`row ${styles.trackCardsContainer}`}>
               {tracks.map((track, index) => (
-                <TrackCard key={`track-card-${index}`} secondary={(index + 1) % 2 == 0} track={track} />
+                <TrackCard
+                  key={`track-card-${index}`}
+                  secondary={(index + 1) % 2 == 0}
+                  track={track}
+                />
               ))}
             </div>
           </div>
