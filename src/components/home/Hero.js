@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 export default function Hero() {
   const offers = [
-    'Industry knowledge',
-    'Best practices',
-    'Basics of React, JavaScript, Git, HTML, and CSS'
+    'Guided curriculum that follows the best industry practices',
+    'Practical workshops and projects to help you gain first-hand experience',
+    'Immersive and engaging content that covers the latest topics'
   ]
 
   return (
@@ -27,7 +27,7 @@ export default function Hero() {
                 <span className={styles.gradient}>web development</span>
               </h1>
               <p className={styles.lead}>
-                Get hands on training and learn the basics of the front-end development from the pros.
+                Get hands on training and learn the skills of a front-end developer and code your own user-friendly web applications from scratch.
               </p>
               <ul className={styles.offers}>
                   {
@@ -48,6 +48,7 @@ export default function Hero() {
                 <Link href="/apply" passHref>
                   <button type='submit'>Apply Now</button>
                 </Link>
+                <p className={styles.smallText}>Only 20 spots available</p>
               </form>
             </header>
           </div>
