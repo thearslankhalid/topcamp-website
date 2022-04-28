@@ -1,0 +1,151 @@
+@use '@/styles/colors' as *;
+@use '@/styles/typography' as *;
+@use '@/styles/fonts' as *;
+@use '@/styles/responsive' as *;
+@use '@/styles/variables' as *;
+
+.instructorSection {
+  @extend .bg-tertiary;
+
+  padding-block: 120px;
+
+  @include lgAndBelow() {
+    padding-block: 100px;
+  }
+
+  @include mdAndBelow() {
+    padding-block: 80px;
+  }
+
+  @include smAndBelow() {
+    padding-block: 60px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.title {
+  @extend .heading-2;
+  @extend .text-black-300;
+
+  margin: 0;
+
+  @include lgAndBelow() {
+    text-align: center;
+    margin-block-end: 20px;
+  }
+}
+
+.lead {
+  @extend .text-black-200;
+
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  margin-block-end: 30px;
+  
+  @include smAndBelow() {
+    font-size: 16px;
+  }
+}
+
+.instructorCardsContainer {
+  display: flex;
+  gap: 40px;
+
+  @include lgAndBelow() {
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+
+.instructorCard {
+  @extend .bg-primary;
+
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  border-radius: 8px;
+  padding: 20px;
+
+  @include smAndBelow() {
+    grid-template-columns: 130px 1fr;
+  }
+}
+
+.left {
+  position: relative;
+
+  img {
+    border-radius: 4px;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: -0.22px;
+    margin-block: 0;
+
+    @extend .font-secondary;
+
+    @include mdAndBelow() {
+      font-size: 24px;
+    }
+  }
+}
+
+.instructorTitle {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-block: 0;
+  opacity: 0.5;
+  
+  @extend .text-black-200;
+}
+
+.description {
+  @extend .text-black-300;
+}
+
+.technologies {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-block-start: 5px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.socialMediaLinks {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-block-start: auto;
+  margin-block-end: 2px;
+
+  a:hover {
+    svg {
+      fill: $secondary-color;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: $gray-100;
+    transition: fill 0.3s ease-in-out;
+  }
+}
