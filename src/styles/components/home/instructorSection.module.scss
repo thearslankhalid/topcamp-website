@@ -101,6 +101,10 @@
     @include mdAndBelow() {
       font-size: 24px;
     }
+
+    @include smAndBelow() {
+      font-size: 20px;
+    }
   }
 }
 
@@ -109,12 +113,22 @@
   line-height: 1.5;
   margin-block: 0;
   opacity: 0.5;
+  white-space: nowrap;
+
+  @include smAndBelow() {
+    font-size: 16px;
+  }
   
   @extend .text-black-200;
 }
 
 .description {
   @extend .text-black-300;
+
+  @include smAndBelow() {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 
 .technologies {

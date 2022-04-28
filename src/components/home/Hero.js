@@ -22,9 +22,8 @@ export default function Hero() {
           <div className='col-lg-6'>
             <header className={styles.header}>
               <h1 className={styles.title}>
-                <span>Learn modern</span>
-                <br />
-                <span className={styles.gradient}>web development</span>
+                Learn modern
+                <p className={styles.gradient}>web development</p>
               </h1>
               <p className={styles.lead}>
                 Get hands on training and learn the skills of a front-end developer and code your own user-friendly web applications from scratch.
