@@ -29,7 +29,7 @@ export default function TimelineSection() {
         <div className="row">
           <div className={`col ${styles.container}`}>
             <h2 className={styles.title}>Bootcamp track timeline</h2>
-            <p className={styles.lead}>This is our sample bootcamp track timeline</p>
+            <p className={styles.lead}>You will be covering the following major topics in the Front-end bootcamp track:</p>
             <div className={styles.timelineContainer}>
               {courseTimeline.map((timelineRow, i) => (
                 <div key={`timeline-row-${i}`} className={styles.timelineRow}>
