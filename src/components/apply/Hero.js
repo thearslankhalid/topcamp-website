@@ -15,9 +15,9 @@ export default function Hero() {
           <div className='col-lg-12'>
             <header className={styles.header}>
               <h1 className={styles.title}>
-                <span>Application form for</span>
+                <span className={styles.gradient}>Front-end bootcamp</span>
                 <br />
-                <span className={styles.gradient}>bootcamp</span>
+                <span>application form</span>
               </h1>
               <p className={styles.lead}>
                 Get hands on training and learn the basics of the front-end development from the pros.
