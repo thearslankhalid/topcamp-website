@@ -48,6 +48,10 @@
   margin: 0;
   margin-block-end: 10px;
   text-align: center;
+
+  @include mdAndBelow() {
+    text-align: left;
+  }
   
   @include smAndBelow() {
     font-size: 16px;
@@ -100,5 +104,6 @@
 
   margin-block-start: 4px;
   font-style: italic;
+  width: 300px;
   text-align: center;
 }

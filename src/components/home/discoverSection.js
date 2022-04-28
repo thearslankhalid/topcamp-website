@@ -66,9 +66,9 @@ export default function DiscoverSection() {
       <div className="container">
         <div className="row">
           <div className={`col ${styles.container}`}>
-            <h1 className={styles.title}>
+            <h2 className={styles.title}>
               Discover our beginner friendly tracks
-            </h1>
+            </h2>
             <p className={styles.lead}>
               Our bootcamps give you an entry point to the modern world
               of web development. Our beginner friendly tracks help you to
