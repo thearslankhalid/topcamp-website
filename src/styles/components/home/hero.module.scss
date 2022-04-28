@@ -28,12 +28,8 @@
     margin-block-end: 16px;
   }
 
-  span {
-    white-space: nowrap;
-
-    @include xsOnly() {
-      white-space: initial;
-    }
+  p {
+    margin-block: 0;
   }
 }
 

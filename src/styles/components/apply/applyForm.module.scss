@@ -1,9 +1,25 @@
 @use '@/styles/colors' as *;
+@use '@/styles/responsive' as *;
 
 .main {
   background-color: $primary-color;
 }
 
 .applyFormContainer {
-  margin-block-start: 150px;
+  max-width: 800px;
+  margin-inline: auto;
+
+  padding-block: 120px;
+
+  @include lgAndBelow() {
+    padding-block: 100px;
+  }
+
+  @include mdAndBelow() {
+    padding-block: 80px;
+  }
+
+  @include smAndBelow() {
+    padding-block: 60px;
+  }
 }

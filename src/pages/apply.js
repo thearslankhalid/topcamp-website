@@ -19,7 +19,7 @@ export default function Apply() {
             <div className='offset-lg-1 col-lg-10'>
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSeyXoLJUsUAhpcYKaHFAvwkArpsnQCghKFc9W1HT-ZD_OLtXA/viewform?embedded=true"
-                width="800"
+                width="100%"
                 height="2800"
                 frameBorder="0"
                 marginHeight="0"
