@@ -59,7 +59,7 @@ export default function FaqSection() {
     ],
     [
       {
-        question: 'Why will the bootcamp start?',
+        question: 'When will the bootcamp start?',
         answer: 'The bootcamp will officially start from 25th June, 2022.'
       },
       {
