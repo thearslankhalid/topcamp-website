@@ -1,0 +1,105 @@
+@use '@/styles/colors' as *;
+@use '@/styles/responsive' as *;
+@use '@/styles/fonts' as *;
+
+.main {
+  background-color: $primary-color;
+}
+
+.contentBox {
+  border: 1px solid $tertiary-color;
+  border-radius: 8px;
+  padding: 30px;
+  margin-block: 120px;
+
+  @include xsOnly() {
+    padding: 20px;
+    margin-block: 80px;
+  }
+
+  h2 {
+    margin-block: 0;
+  }
+}
+
+.blockHeader {
+  border-radius: 8px 8px 0 0;
+  padding: 30px;
+  background-color: rgba($color: $gray-100, $alpha: 0.2);
+  margin: -30px -30px 0 -30px;
+  font-family: $secondary-font;
+  font-weight: $fw-600;
+  font-size: 24px;
+  line-height: 1.5;
+
+  @include xsOnly() {
+    padding: 20px;
+    margin: -20px -20px 0 -20px;
+  }
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-block: 30px;
+
+  @include xsOnly() {
+    margin-block: 20px;
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    gap: 5px;
+  }
+
+  span:first-child {
+    font-weight: $fw-600;
+  }
+}
+
+.tableContainer {
+  width: 100%;
+  overflow: scroll;
+}
+
+.infoTable {
+  width: 100%;
+
+  td {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+
+    @include xsOnly() {
+      padding: 15px;
+    }
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgba($color: $gray-100, $alpha: 0.2);
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba($color: $gray-100, $alpha: 0.1);
+  }
+}
+
+.infoBox {
+  padding: 20px;
+  border: 1px solid skyblue;
+  border-radius: 4px;
+  margin-block: 30px;
+
+  @include xsOnly() {
+    margin-block: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-block: 0;
+  }
+}

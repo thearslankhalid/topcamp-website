@@ -37,8 +37,12 @@ export default function FaqSection() {
   const faqColumns = [
     [
       {
+        question: 'What is the fee for the bootcamp?',
+        answer: 'The total fee for the Front-end bootcamp of 4 months is only 20,000 PKR.'
+      },
+      {
         question: 'What are the payment options for the bootcamp?',
-        answer: 'You will have to pay for the full fee upfront in a lump sum for the bootcamp. We do not have installment options available currently.'
+        answer: 'You will have to pay for the full fee (20,000 PKR) upfront in a lump sum for the bootcamp. We do not have installment options available currently.'
       },
       {
         question: 'Which technologies will be covered?',
@@ -46,10 +50,18 @@ export default function FaqSection() {
       },
       {
         question: 'How will the classes be conducted?',
-        answer: 'The classes will be conducted in a hybrid model. There will be a total of 5 sessions in a week. There will be 2-3 online sessions of 1-2 hours in the week days and there will be 2 on-site sessions of 4 hours over the weekends.'
+        answer: 'All the classes will be on-site. There will be a total of 5 sessions in a week. There will be 3 sessions of 2 hrs in the week days (Tue, Wed, Thurs) and 2 sessions of 6 hrs over the weekends (Sat & Sun).'
       },
+      {
+        question: 'Are there any pre-requisites to join?',
+        answer: 'There are no pre-requisites required to join the bootcamp. We believe that programming is a skill like others. It can be learnt with hard work, practice, and passion. '
+      }
     ],
     [
+      {
+        question: 'When will the bootcamp start?',
+        answer: 'The bootcamp will officially start from 25th June, 2022.'
+      },
       {
         question: 'Why will employers hire graduates from a bootcamp?',
         answer: 'We at TopCamp have a strong curriculum and training that will prepare you to succeed in tech jobs. Throughout the program we will be making you work in ways that mirror in-demand jobs: team projects, tight deadlines, and building products.'
@@ -61,6 +73,10 @@ export default function FaqSection() {
       {
         question: 'What are the computer requirements?',
         answer: 'Our curriculum consists of many instructions and software packages that work seamlessly with a good spec laptop. We recommend a laptop with a minimum of 8GB of RAM and a quad-core processor released in the last few years. However, it is possible to complete the program with lower spec laptops.'
+      },
+      {
+        question: 'Who is eligible to apply?',
+        answer: 'You can apply for the bootcamp if you are a college student, undergraduate or a graduate.'
       }
     ]
   ];
