@@ -11,19 +11,13 @@ export default function Hero() {
 
   return (
     <section className={styles.heroSection}>
-      <div className={styles.smallCircle}>
-        <Image width={80} height={80} src="/assets/circle-sm.svg" alt="A circle filled with gradient" />
-      </div>
-      <div className={styles.largeCircle}>
-        <Image width={250} height={250} src="/assets/circle-lg.svg" alt="A circle filled with gradient" />
-      </div>
       <div className='container'>
         <div className='row'>
-          <div className='col-lg-6'>
+          <div className='col-lg-7'>
             <header className={styles.header}>
               <h1 className={styles.title}>
-                Learn modern
-                <p className={styles.gradient}>web development</p>
+                Become a developer
+                <p className={styles.gradient}>without a CS degree</p>
               </h1>
               <p className={styles.lead}>
                 Get hands on training and learn the skills of a front-end developer and code your own user-friendly web applications from scratch.
@@ -52,9 +46,20 @@ export default function Hero() {
             </header>
           </div>
 
-          <div className='col-lg-6'>
+          <div className={`col-lg-5 ${styles.imageGridContainer}`}>
             <div className={styles.imageContainer}>
-              <Image width="1200" height="800" src="/assets/coding-header-bg.svg" alt="A developer coding styling div elements" />
+              <div className={styles.heroImg}>
+                <Image layout='fill' src="/assets/hero/hero-pic-1.png" alt="A developer coding styling div elements" />
+              </div>
+              <div className={styles.heroImg}>
+                <Image layout='fill' src="/assets/hero/hero-pic-2.png" alt="A developer coding styling div elements" />
+              </div>
+              <div className={styles.heroImg}>
+                <Image layout='fill' src="/assets/hero/hero-pic-3.png" alt="A developer coding styling div elements" />
+              </div>
+              <div className={styles.heroImg}>
+                <Image layout='fill' src="/assets/hero/hero-pic-4.png" alt="A developer coding styling div elements" />
+              </div>
             </div>
           </div>
         </div>

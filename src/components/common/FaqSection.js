@@ -50,7 +50,7 @@ export default function FaqSection() {
       },
       {
         question: 'How will the classes be conducted?',
-        answer: 'All the classes will be on-site. There will be a total of 5 sessions in a week. There will be 3 sessions of 2 hrs in the week days (Tue, Wed, Thurs) and 2 sessions of 6 hrs over the weekends (Sat & Sun).'
+        answer: 'All the classes will be on-site. There will be a total of 5 sessions in a week. There will be 2 sessions of 2 hrs in the week days (Tue & Thurs) and 2 sessions of 6 hrs over the weekends (Sat & Sun).'
       },
       {
         question: 'Are there any pre-requisites to join?',

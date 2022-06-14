@@ -5,7 +5,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon.png" />
+          <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="/favicons/apple-touch-icon.png"
+          />
           <link
             rel="icon"
             type="image/png"
@@ -19,7 +23,11 @@ class MyDocument extends Document {
             href="/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/favicons/site.webmanifest" />
-          <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+          <link
+            rel="mask-icon"
+            href="/favicons/safari-pinned-tab.svg"
+            color="#5bbad5"
+          />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
 
@@ -30,7 +38,7 @@ class MyDocument extends Document {
             crossOrigin={true}
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
             rel="stylesheet"
           />
           <link
@@ -39,6 +47,11 @@ class MyDocument extends Document {
           />
           <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons"
+            rel="stylesheet"
+          />
+          {/* eslint-disable-next-line @next/next/no-css-tags */}
+          <link
+            href="../../public/fonts/archia-regular-webfont.woff2"
             rel="stylesheet"
           />
         </Head>

@@ -1,8 +1,8 @@
 @use "sass:map";
 
-$primary-color: #fffffe;
-$secondary-color: #7f5af0;
-$tertiary-color: #2cb67d;
+$primary-color: #fff;
+$secondary-color: #FF7146;
+$tertiary-color: #00BF9C;
 
 $gray-100: #94a1b2;
 $gray-200: #72757e;
@@ -10,6 +10,7 @@ $gray-200: #72757e;
 $black-100: #242629;
 $black-200: #16161a;
 $black-300: #010101;
+$black-400: #11111B;
 
 $orange-100: #f97316;
 
@@ -22,6 +23,7 @@ $colors: (
   "black-100": $black-100,
   "black-200": $black-200,
   "black-300": $black-300,
+  "black-400": $black-400,
   "orange-100": $orange-100
 );
 
@@ -50,12 +52,12 @@ $stt-gradient: linear-gradient(to right, $secondary-color, $tertiary-color);
 
 @property --gradientColor1 {
   syntax: '<color>';
-  initial-value: $tertiary-color;
+  initial-value: $secondary-color;
   inherits: false;
 }
 
 @property --gradientColor2 {
   syntax: '<color>';
-  initial-value: $tertiary-color;
+  initial-value: $secondary-color;
   inherits: false;
 }
