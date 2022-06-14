@@ -39,7 +39,7 @@ $track-card--base-color: $tertiary-color;
   @extend .text-primary;
 
   margin: 0;
-  margin-block-end: 0;
+  margin-block-end: 10px;
 }
 
 .lead {
@@ -91,7 +91,7 @@ $track-card--base-color: $tertiary-color;
   }
   
   .trackCardTitle {
-    @extend .text-black-300;
+    @extend .text-black-400;
     @extend .font-secondary;
   
     font-size: 20px;
@@ -101,7 +101,7 @@ $track-card--base-color: $tertiary-color;
   }
   
   .trackCardDescription {
-    @extend .text-black-100;
+    @extend .text-black-400;
   
     font-size: 14px;
     line-height: 17px;

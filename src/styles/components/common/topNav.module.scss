@@ -17,6 +17,7 @@
 .logoContainer {
   height: 100%;
   display: flex;
+  align-items: center;
 
   img {
     cursor: pointer;
@@ -46,7 +47,7 @@
 
     &:hover {
       @extend .bg-primary;
-      @extend .text-black-100;
+      @extend .text-black-400;
     }
 
     @include xsOnly() {

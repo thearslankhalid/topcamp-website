@@ -5,12 +5,6 @@ import styles from '@/styles/components/apply/hero.module.scss'
 export default function Hero({ title, gradientTitle, paragraph }) {
   return (
     <section className={styles.heroSection}>
-      <div className={styles.smallCircle}>
-        <Image width={80} height={80} src="/assets/circle-sm.svg" alt="A circle filled with gradient" />
-      </div>
-      <div className={styles.largeCircle}>
-        <Image width={250} height={250} src="/assets/circle-lg.svg" alt="A circle filled with gradient" />
-      </div>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-12'>

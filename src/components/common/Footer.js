@@ -12,7 +12,7 @@ export default function Footer() {
           <div className='col-6'>
             <div className={styles.logoContainer}>
               <Link href="/" passHref>
-                <Image src="/assets/logo.svg" width={130} height={32} alt="TopCamp logo" />
+                <Image src="/assets/logo-light.png" width={164} height={32} alt="TopCamp logo" />
               </Link>
             </div>
           </div>
@@ -20,15 +20,15 @@ export default function Footer() {
           <div className='col-6'>
             <ul className={styles.socialMediaLinks}>
               <li>
-                <SocialIcon href="https://facebook.com/groups/topcampers" kind="facebook" />
+                <SocialIcon href="https://facebook.com/topcamphq" kind="facebook" />
               </li>
               <li>
-                <SocialIcon href="https://linkedin.com" kind="linkedin" />
+                <SocialIcon href="https://linkedin.com/company/topcamphq" kind="linkedin" />
+              </li>
+              <li>
+                <SocialIcon href="https://twitter.com/topcampH" kind="twitter" />
               </li>
               {/* <li>
-                <SocialIcon href="https://twitter.com" kind="twitter" />
-              </li>
-              <li>
                 <SocialIcon href="https://github.com" kind="github" />
               </li> */}
             </ul>

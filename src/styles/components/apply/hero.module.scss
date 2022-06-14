@@ -6,7 +6,7 @@
 @use '@/styles/responsive' as *;
 
 .heroSection {
-  @extend .bg-black-200;
+  @extend .bg-black-400;
 
   position: relative;
   overflow-x: hidden;
@@ -43,7 +43,7 @@
 
 .lead {
   @extend .text-lead;
-  @extend .text-gray-100;
+  @extend .text-primary;
 
   margin-block-end: 32px;
 
@@ -71,7 +71,7 @@
   }
 
   span:last-child {
-    @extend .text-gray-100;
+    @extend .text-primary;
   }
 }
 
@@ -83,7 +83,7 @@
 
   input {
     @extend .bg-primary;
-    @extend .text-black-300;
+    @extend .text-black-400;
 
     font-size: 14px;
     height: 48px;

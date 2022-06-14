@@ -4,7 +4,7 @@ import SocialIcon from '../social-icons';
 
 const team = [
   {
-    imgUrl: '/assets/team/team-1.jpeg',
+    imgUrl: '/assets/team/team-1.png',
     name: 'Shah Hassan',
     title: 'Full-stack Developer',
     technologies: ['javascript', 'csharp'],
@@ -22,7 +22,7 @@ const team = [
       'Experienced in building user-friendly multi-tenant applications.',
   },
   {
-    imgUrl: '/assets/team/team-2.jpeg',
+    imgUrl: '/assets/team/team-2.png',
     name: 'Arslan Khalid',
     title: 'Front-end Developer',
     technologies: ['javascript', 'next', 'react', 'sass'],
@@ -45,6 +45,12 @@ export default function InstructorSection() {
   return (
     <section className={styles.instructorSection}>
       <div className="container">
+        <Image
+          height={120}
+          width={140}
+          src="/assets/Pattern.svg"
+          alt="A developer coding styling div elements"
+        />
         <div className="row">
           <div className={`col ${styles.container}`}>
             <h2 className={styles.title}>Meet your instructors</h2>
@@ -91,6 +97,14 @@ export default function InstructorSection() {
               ))}
             </div>
           </div>
+        </div>
+        <div className={styles.lastImageContainer}>
+          <Image
+            height={120}
+            width={140}
+            src="/assets/Pattern.svg"
+            alt="A developer coding styling div elements"
+          />
         </div>
       </div>
     </section>

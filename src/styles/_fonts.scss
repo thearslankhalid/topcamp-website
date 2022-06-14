@@ -1,5 +1,12 @@
-$primary-font: Roboto, 'sans-serif';
-$secondary-font: Montserrat, 'sans-serif';
+@font-face {
+  font-family: 'Archia';
+  src: url('../../public/fonts/archia-regular-webfont.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$primary-font: Archia, 'sans-serif';
+$secondary-font: Inter, 'sans-serif';
 
 .font-primary {
   font-family: $primary-font;

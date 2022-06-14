@@ -12,7 +12,7 @@ export default function TopNav({ showApplyButton }) {
           <div className='col-6'>
             <div className={styles.logoContainer}>
               <Link href="/" passHref>
-                <Image src="/assets/logo.svg" width={130} height={32} alt="TopCamp logo" />
+                <Image src="/assets/logo-light.png" width={164} height={32} alt="TopCamp logo" />
               </Link>
             </div>
           </div>
