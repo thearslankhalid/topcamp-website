@@ -5,7 +5,7 @@
 @use '@/styles/variables' as *;
 
 .faqSection {
-  @extend .bg-black-100;
+  @extend .bg-black-400;
 
   padding-block: 120px;
 
@@ -24,7 +24,7 @@
 
 .title {
   @extend .heading-2;
-  @extend .text-tertiary;
+  @extend .text-primary;
 
   margin-block-start: 0;
   margin-block-end: 0;
@@ -32,7 +32,7 @@
 }
 
 .subtitle {
-  @extend .text-gray-100;
+  @extend .text-primary;
 
   font-size: 20px;
   line-height: 28px;
@@ -47,7 +47,7 @@
   max-width: 1000px;
   margin: 0 auto;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     flex-direction: column;
   }
 }
@@ -57,7 +57,7 @@
   flex-direction: column;
   width: calc(50% - 10px);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     width: 100%;
   }
 }

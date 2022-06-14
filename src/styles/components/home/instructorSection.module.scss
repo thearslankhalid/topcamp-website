@@ -5,21 +5,22 @@
 @use '@/styles/variables' as *;
 
 .instructorSection {
-  @extend .bg-tertiary;
+  // @extend .bg-tertiary;
 
-  padding-block: 120px;
+  position: relative;
+  // padding-block: 120px;
 
-  @include lgAndBelow() {
-    padding-block: 100px;
-  }
+  // @include lgAndBelow() {
+  //   padding-block: 100px;
+  // }
 
-  @include mdAndBelow() {
-    padding-block: 80px;
-  }
+  // @include mdAndBelow() {
+  //   padding-block: 80px;
+  // }
 
-  @include smAndBelow() {
-    padding-block: 60px;
-  }
+  // @include smAndBelow() {
+  //   padding-block: 60px;
+  // }
 }
 
 .container {
@@ -30,18 +31,17 @@
 
 .title {
   @extend .heading-2;
-  @extend .text-black-300;
+  @extend .text-primary;
 
   margin: 0;
 
   @include lgAndBelow() {
-    text-align: center;
-    margin-block-end: 20px;
+    margin-block-end: 10px;
   }
 }
 
 .lead {
-  @extend .text-black-200;
+  @extend .text-primary;
 
   font-size: 20px;
   line-height: 1.5;
@@ -119,11 +119,11 @@
     font-size: 16px;
   }
   
-  @extend .text-black-200;
+  @extend .text-black-400;
 }
 
 .description {
-  @extend .text-black-300;
+  @extend .text-black-400;
 
   @include smAndBelow() {
     font-size: 14px;
@@ -162,4 +162,10 @@
     fill: $gray-100;
     transition: fill 0.3s ease-in-out;
   }
+}
+
+.lastImageContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-start: 15px;
 }
