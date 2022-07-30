@@ -23,7 +23,7 @@ export default function TopNav({ showApplyButton }) {
                 ? (
                   <ul className={styles.linkContainer}>
                     <li>
-                      <Link href="/apply" passHref>
+                      <Link href="/signup" passHref>
                         <button>
                           Apply Now
                         </button>

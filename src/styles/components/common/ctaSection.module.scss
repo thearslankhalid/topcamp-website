@@ -36,6 +36,7 @@
   @extend .heading-1;
   @extend .text-primary;
 
+  text-align: center;
   margin: 0;
   margin-block-end: 30px;
 }
@@ -46,7 +47,7 @@
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
-  margin-block-end: 10px;
+  margin-block-end: 30px;
   text-align: center;
 
   @include mdAndBelow() {

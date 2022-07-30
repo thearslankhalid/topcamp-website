@@ -6,16 +6,16 @@ const tracks = [
     icon: 'developer_mode',
     title: 'Front-end development Bootcamp',
     description:
-      'Learn how to build user-friendly web applications from scratch.',
+      'Learn how to build user-friendly web applications from scratch. Next cohort starts in December.',
     deadline: '30-05-2022',
-    buttonText: 'Apply now',
-    isRegistrationOpen: true,
+    buttonText: 'Pre Apply now',
+    isRegistrationOpen: false,
   },
   {
     icon: 'lightbulb',
-    title: 'Back-end development Bootcamp',
+    title: 'Advanced React Patterns Course',
     description:
-      'Learn the basic building blocks of building scalable back-end applications.',
+      'Up-skill as a Front-end developer by learning the advanced patterns and concepts of React.',
     deadline: '01-03-2022',
     buttonText: 'Coming soon!',
     isRegistrationOpen: false,

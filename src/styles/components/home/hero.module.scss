@@ -3,7 +3,7 @@
 @use '@/styles/typography';
 @use '@/styles/mixins' as *;
 @use '@/styles/variables' as *;
-@use '@/styles/responsive' as *;
+@use '@/styles/responsive' as *;  
 
 .heroSection {
   @extend .bg-black-200;
@@ -120,14 +120,14 @@
 
 .imageGridContainer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .imageContainer {
   display: grid;
-  grid-template-rows: 240px 240px;
-  grid-template-columns: 170px 170px;
+  grid-template-rows: 230px 230px;
+  grid-template-columns: 140px 140px;
   gap: 20px;
 
   @include mdAndBelow() {
@@ -150,6 +150,7 @@
 
   img {
     border-radius: 8px;
+    object-fit: cover;
   }
 }
 

@@ -38,10 +38,10 @@ export default function Hero() {
               </ul>
               <form className={styles.subscribeForm}>
                 {/* <input type="email" required placeholder='Enter your email address' /> */}
-                <Link href="/apply" passHref>
-                  <button type='submit'>Apply Now</button>
+                <Link href="/signup" passHref>
+                  <button type='submit'>Yes, Sign me up</button>
                 </Link>
-                <p className={styles.smallText}>Only 20 spots available</p>
+                <p className={styles.smallText}>Stay updated on the next cohort</p>
               </form>
             </header>
           </div>
@@ -49,16 +49,16 @@ export default function Hero() {
           <div className={`col-lg-5 ${styles.imageGridContainer}`}>
             <div className={styles.imageContainer}>
               <div className={styles.heroImg}>
-                <Image layout='fill' src="/assets/hero/hero-pic-1.png" alt="A developer coding styling div elements" />
+                <Image layout='fill' src="/assets/hero/hero-pic-1.png" alt="A developer" />
               </div>
               <div className={styles.heroImg}>
-                <Image layout='fill' src="/assets/hero/hero-pic-2.png" alt="A developer coding styling div elements" />
+                <Image layout='fill' src="/assets/hero/hero-pic-2.png" alt="A developer" />
               </div>
               <div className={styles.heroImg}>
-                <Image layout='fill' src="/assets/hero/hero-pic-3.png" alt="A developer coding styling div elements" />
+                <Image layout='fill' src="/assets/hero/hero-pic-3.png" alt="A developer" />
               </div>
               <div className={styles.heroImg}>
-                <Image layout='fill' src="/assets/hero/hero-pic-4.png" alt="A developer coding styling div elements" />
+                <Image layout='fill' src="/assets/hero/hero-pic-4.png" alt="A developer" />
               </div>
             </div>
           </div>

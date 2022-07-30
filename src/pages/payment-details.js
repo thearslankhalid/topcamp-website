@@ -107,7 +107,7 @@ export default function PaymentDetails() {
                   </div>
                   <div className={styles.infoBox}>
                     <p>
-                    Please share your receipt via email at contact.topcamp@gmail.com or Whatsapp to +92-304-8790282, after transferring the amount.
+                    Please share your receipt via email at info@topcamp.pk or Whatsapp to +92-304-8790282, after transferring the amount.
                     </p>
                   </div>
                 </div>

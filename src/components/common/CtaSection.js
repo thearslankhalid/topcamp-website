@@ -7,22 +7,19 @@ export default function CTASection() {
       <div className="container">
         <div className="row">
           <div className={`col ${styles.container}`}>
-            <h1 className={styles.title}>Start your application</h1>
+            <h1 className={styles.title}>Kickstart your career in modern web development</h1>
             <p className={styles.lead}>
-              Become a student at TopCamp and kickstart your career in modern
-              web development.
-              <br />
-              The application deadline is:
+              Get to know when our next cohort starts and get a chance to avail the early bird discount.
             </p>
-            <p className={styles.date}>
+            {/* <p className={styles.date}>
               June, 22<sup className={styles.sup}>nd</sup> 2022
-            </p>
-            <Link href="/apply" passHref>
-              <a className={styles.link} href="https://www.google.com">
-                Apply now
+            </p> */}
+            <Link href="/signup" passHref>
+              <a className={styles.link}>
+                Yes, Sign me up
               </a>
             </Link>
-            <p className={styles.smallText}>Only 20 spots available</p>
+            <p className={styles.smallText}>Stay updated on the next cohort</p>
           </div>
         </div>
       </div>
